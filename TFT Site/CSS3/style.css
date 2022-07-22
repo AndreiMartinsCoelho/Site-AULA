@@ -1,0 +1,220 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+nav{
+    background-color: #000;
+    padding: 0 20;
+    display: flex;
+    justify-content: space-between;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    color: #FFFF;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    margin: 1%;
+    text-decoration: none;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vw;
+    margin-left: 10%;
+}
+
+p{
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 14%;
+}
+
+nav, ul{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+li{
+    padding: 0 20px;
+    margin: 1%;
+}
+
+li:hover,button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+button{
+    background-color: transparent;
+    background: #252525;
+    border-radius: 20px;
+    border: none;
+    color:#FFFF;
+    font-size: 56px;
+    position: absolute;
+    right: 10px;
+    top:4px;
+    display:none;
+    box-shadow: inset 0 0 1em #252525;
+}
+
+button:focus~ul{
+    height: 220px;
+}
+
+.logotft{
+    width: 8ch;
+    margin: 6px;
+    float: left;
+}
+
+.logotft img{
+    width: 100%;
+}
+
+.iconriot{
+    width: 8ch;
+    margin: 6px;
+}
+
+.iconriot img{
+    width: 100%;
+}
+
+section{
+    background-color: #01ffea;
+    min-height: 3744px;
+
+}
+
+header{
+	background-image: url(../imagens/TFT_12.4_DoubleUp-Article-Header_1920x1080_ALyu_Final-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 0;
+	width: 100%;
+}
+
+flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tft-logo{
+	width: 53%;
+	display: flex;
+}
+
+.tft-logo img{
+	width: 100%;
+	margin: 30%;
+}
+
+.vencer-img{
+    width: 80%;
+    margin: 10%;
+}
+
+.vencer-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.arsenal-img{
+    width: 80%;
+    margin: 10%;
+}
+
+.arsenal-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width:700px){
+    nav, ul{
+        flex-direction: column;
+
+    }
+
+    section{
+        min-height: 1008px;
+    
+    }
+
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;;
+    }
+
+    nav{
+        z-index: 7;
+
+    }
+
+    button{
+        display: flex;
+    }
+
+    u1,ul{
+        width:100%
+    }
+
+	.logotft{
+        width: 8ch;
+        position: absolute;
+        margin: 6px;
+        left: 100px;
+    }
+
+    a{
+        margin: 3%;
+        display: block;
+        text-decoration: none;
+    }
+
+    h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 6vw;
+    }
+
+    p{
+        font-size: 3vw;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0 14%;
+    }
+
+    .vencer-img{
+        width: 80%;
+        margin: 10%;
+    }
+
+    .vencer-img img{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .arsenal-img{
+        width: 80%;
+        margin: 10%;
+    }
+
+    .arsenal-img img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
